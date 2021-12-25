@@ -1,9 +1,8 @@
 name: First Job
 on: [push]
 jobs:
-    print-hello-world:
+    build-app:
         runs-on: ubuntu-latest
         steps:
-            - run: echo "Hello World!"
-            - run: echo "This is my first action."
-            - run: echo "Works fine."
+            - uses: actions/checkout@v2
+            - run: tree
