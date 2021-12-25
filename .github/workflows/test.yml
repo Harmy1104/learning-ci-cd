@@ -14,3 +14,8 @@ jobs:
           run: yarn build
         - name: "Finished"
           run: echo "Done..."
+    dependent:
+        needs: build-app
+        runs-on: ubuntu-latest
+        steps:
+            - run: echo "Dependent on build-app"
