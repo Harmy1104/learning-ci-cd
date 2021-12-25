@@ -8,7 +8,11 @@ jobs:
         - uses: actions/setup-node@v2
           with: 
             node-version: "16.13.1"
+<<<<<<< HEAD
         - name: "Building the project"
           run: yarn build
         - name: "Finished"
           run: echo "Done..."
+=======
+        - run: "node -v"
+>>>>>>> 3e6078d9bdd2c811c253d3409acd1c7287a9198d
