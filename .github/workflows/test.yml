@@ -10,5 +10,5 @@ jobs:
             node-version: "16.13.1"
         - name: "Building the project"
           run: yarn build
-        #- name: "Finished"
-        #  run: echo "Done..."
+        - name: "Finished"
+          run: echo "Done..."
